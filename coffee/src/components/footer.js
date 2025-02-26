@@ -3,7 +3,7 @@ import logo from '../component images/logo.png'; // Ensure the correct path
 
 function Footer() {
   return (
-    <footer className="py-8 mt-8 text-white bg-black">
+    <footer className="py-8 mt-auto text-white bg-black">
       <div className="container flex flex-col items-center justify-between px-8 mx-auto md:flex-row md:px-32 lg:px-64">
        
         {/* Left Section - Logo & Cafe Info */}

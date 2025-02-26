@@ -73,7 +73,7 @@ function Home() {
           autoplay={{ delay: 3000, disableOnInteraction: false }} 
           loop={true} 
           modules={[Autoplay]}
-          className="w-full max-w-xs mx-auto rounded-lg shadow-2xl md:max-w-3xl md:max-w-4xl"
+          className="w-full max-w-xs mx-auto rounded-lg shadow-2xl md:max-w-3xl "
         >
           <SwiperSlide>
             <img src={swiper1} alt="Swiper 1" className="w-full h-[200px] md:h-[400px] object-cover rounded-2xl" />
@@ -89,6 +89,7 @@ function Home() {
           </SwiperSlide>
         </Swiper>
       </div>
+      <div className='mt-8'></div>
     </div>
   );
 }
