@@ -53,36 +53,42 @@ function AboutUs() {
       
      <div className="flex justify-center space-x-4 md:justify-center">
         <img src={icon} alt="Icon" className="w-[30px] h-[30px] md:w-[40px] md:h-[40px]" />
-          <p className="text-black font-bold text-[30px] md:text-[40px]">Our Staff</p>
+          <p className="text-black font-bold text-[30px] md:text-[40px]">Our Team</p>
      </div>
       
       
       <div className='relative flex items-center mt-6 ml-48 space-x-48'>
   <div className='text-center'>
-    <img src={person4} alt='person4' className='w-[260px] h-[200px] rounded-md transition-transform duration-300 hover:scale-110 shadow-md' />
-    <p className='mt-2 text-lg font-semibold'>John Doe</p>
+    <img src={person6} alt='person6' className='w-[260px] h-[200px] rounded-md transition-transform duration-300 hover:scale-110 shadow-md' />
+    <p className='mt-2 text-lg font-semibold'>W.D.D.Silva</p>
+    <p className='mt-2 text-lg font-semibold'>(Manager)</p>
   </div>
   <div className='text-center'>
-    <img src={person5} alt='person5' className='w-[260px] h-[200px] rounded-md transition-transform duration-300 hover:scale-110 shadow-md' />
-    <p className='mt-2 text-lg font-semibold'>Emma Smith</p>
+    <img src={person1} alt='person' className='w-[260px] h-[200px] rounded-md transition-transform duration-300 hover:scale-110 shadow-md' />
+    <p className='mt-2 text-lg font-semibold'>N.S.R.Josap</p>
+    <p className='mt-2 text-lg font-semibold'>(Assistant Manager)</p>
   </div>
   <div className='text-center'>
-    <img src={person6} alt='person6' className='w-[260px] h-[200px] rounded-md transition-transform duration-300 hover:scale-110 shadow-md ' />
-    <p className='mt-2 text-lg font-semibold'>Michael Brown</p>
+    <img src={person4} alt='person4' className='w-[260px] h-[200px] rounded-md transition-transform duration-300 hover:scale-110 shadow-md ' />
+    <p className='mt-2 text-lg font-semibold'>P.M.R.Ruchi</p>
+    <p className='mt-2 text-lg font-semibold'>(Hed Barista)</p>
   </div>
 </div>
 <div className='relative flex items-center mt-6 ml-48 space-x-48'>
 <div className='text-center'>
-<img src={person1} alt='person1' className='w-[260px] h-[200px] rounded-md transition-transform duration-300 hover:scale-110 shadow-md' />
-    <p className='mt-2 text-lg font-semibold'>Emma Smith</p>
+<img src={person3} alt='person3' className='w-[260px] h-[200px] rounded-md transition-transform duration-300 hover:scale-110 shadow-md' />
+    <p className='mt-2 text-lg font-semibold'>N.L.K.Neha</p>
+    <p className='mt-2 text-lg font-semibold'>(Chief Chef)</p>
   </div>
   <div className='text-center'>
     <img src={person2} alt='person2' className='w-[260px] h-[200px] rounded-md transition-transform duration-300 hover:scale-110 shadow-md ' />
-    <p className='mt-2 text-lg font-semibold'>Michael Brown</p>
+    <p className='mt-2 text-lg font-semibold'>M.L.P.Radeesh</p>
+    <p className='mt-2 text-lg font-semibold'>(Junior Chef)</p>
   </div>
   <div className='text-center'>
-    <img src={person3} alt='person3' className='w-[260px] h-[200px] rounded-md transition-transform duration-300 hover:scale-110 shadow-md ' />
-    <p className='mt-2 text-lg font-semibold'>Michael Brown</p>
+    <img src={person5} alt='person5' className='w-[260px] h-[200px] rounded-md transition-transform duration-300 hover:scale-110 shadow-md ' />
+    <p className='mt-2 text-lg font-semibold'>R.C.S.Kalum</p>
+    <p className='mt-2 text-lg font-semibold'>(Marketing Specialist)</p>
   </div>
   
 </div>
