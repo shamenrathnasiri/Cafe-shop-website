@@ -18,7 +18,7 @@ function Icecoffee() {
   ];
 
   return (
-    <div className="bg-[#E5D6AB] flex flex-col items-center justify-center w-[1200px] h-auto rounded-lg mt-4 mx-auto p-8">
+    <div className="bg-[#E5D6AB] flex flex-col items-center justify-center w-[1200px] h-auto rounded-lg mt-4 mx-auto p-8 shadow-md">
       <p className='font-bold text-black text-[25px] mb-6'>Buns</p>
 
       <div className="grid grid-cols-3 gap-10">
