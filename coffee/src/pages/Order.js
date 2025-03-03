@@ -6,6 +6,7 @@ import order3 from '../order page images/order3.jpg';
 import order4 from '../order page images/order4.jpg';
 import order5 from '../order page images/order5.jpg';
 import order6 from '../order page images/order6.jpg';
+import { useNavigate } from "react-router-dom";
 
 function Order() {
   const orderItems = [
@@ -17,9 +18,15 @@ function Order() {
     { img: order6, name: "Hey Welcome", desc1: "For functions & events.", weight: "1kg", price: "Rs.6500.00" }
   ];
 
+const navigate = useNavigate();
+
+const handleOrderClick = (item) => {
+  navigate("/order-details", { state: item });
+};
+
   return (
     <>
-      <div className="w-full min-h-full bg-gradient-to-b from-[#FFFFFF] to-[#A0FF9D]">
+      <div className="w-full min-h-full bg-gradient-to-b  from-[#FFFFFF] to-[#A0FF9D]">
         {/* Background Section with Text Overlay */}
         <div className="relative flex w-full h-[100vh]">
           {/* Background Image */}
@@ -30,7 +37,7 @@ function Order() {
           />
           
           {/* Text Overlay on image */}
-          <div className="absolute z-10 px-6 mt-16 text-left text-white">
+          <div className="absolute z-10 px-6 mt-16 text-center text-white ml-96">
             <h1 className="text-5xl font-extrabold drop-shadow-lg">
               Cozy Bean Cafe - Your <br />
               Perfect Brew, Just a Click Away!
@@ -59,9 +66,9 @@ function Order() {
                 <p className="text-sm text-gray-600">{item.desc1}</p>
                 <p className="font-semibold text-gray-800 text-md">{item.weight}</p>
                 <p className="font-bold text-red-600">{item.price}</p>
-                <button className="px-3 py-1 mt-2 font-bold text-black bg-green-500 rounded-lg shadow-md hover:bg-yellow-300">
-                  Order
-                </button>
+                <button
+                  onClick={() => handleOrderClick(item)}
+                  className="px-3 py-1 mt-2 font-bold text-black bg-green-500 rounded-lg shadow-md hover:bg-yellow-300">Order</button>
               </div>
             </div>
           ))}
