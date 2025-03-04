@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../component images/logo.png'; // Ensure the correct path
+import logo from '../component images/logo2.png'; // Ensure the correct path
 
 function Footer() {
   return (
@@ -8,7 +8,7 @@ function Footer() {
        
         {/* Left Section - Logo & Cafe Info */}
         <div className="flex flex-col items-center space-y-4 md:flex-row md:space-x-12 md:items-start">
-          <img src={logo} alt="Logo" className="w-24 h-24" />
+          <img src={logo} alt="Logo" className="w-24 h-24 mt-8" />
           <div className="text-center md:text-left">
             <h2 className="text-xl font-bold">Cozy Bean Cafe</h2>
             <p>No 128/1, Main Road,</p>
@@ -23,6 +23,7 @@ function Footer() {
           <a href="/" className="block hover:underline">Home</a>
           <a href="/about" className="block hover:underline">About Us</a>
           <a href="/menu" className="block hover:underline">Menu</a>
+          <a href="/order" className="block hover:underline">Order</a>
           <a href="/contact" className="block hover:underline">Contact</a>
         </div>
       </div>

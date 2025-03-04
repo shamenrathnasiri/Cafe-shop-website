@@ -26,52 +26,50 @@ const handleOrderClick = (item) => {
 
   return (
     <>
-      <div className="w-full min-h-full bg-gradient-to-b  from-[#FFFFFF] to-[#A0FF9D]">
-        {/* Background Section with Text Overlay */}
-        <div className="relative flex w-full h-[100vh]">
-          {/* Background Image */}
-          <img
-            src={Bgimage}
-            alt="Background"
-            className="absolute z-0 object-cover w-full h-full brightness-50"
-          />
-          
-          {/* Text Overlay on image */}
-          <div className="absolute z-10 px-6 mt-16 text-center text-white ml-96">
-            <h1 className="text-5xl font-extrabold drop-shadow-lg">
-              Cozy Bean Cafe - Your <br />
-              Perfect Brew, Just a Click Away!
-            </h1>
-            <p className="mt-4 text-lg font-medium leading-relaxed drop-shadow-md">
-              Indulge in the rich aroma and flavors of handcrafted coffee with our seamless online <br />
-              ordering experience. Whether you're craving a bold espresso, a creamy latte, or a<br />
-              refreshing iced coffee, our beautifully designed order page makes it easy to customize<br />
-              and order your favorite brew in seconds.
-            </p>
-            <h2 className="mt-6 text-2xl font-bold drop-shadow-md">Order In Here.</h2>
-            <p className="text-sm font-semibold text-gray-300 drop-shadow-md">
-              (You can order only one at a time...)
-            </p>
-          </div>
+      <div className="relative flex w-full h-[100vh]">
+        <img
+          src={Bgimage}
+          alt="Background"
+          className="absolute z-0 object-cover w-full h-full brightness-50"
+        />
+       <div className="absolute z-10 px-6 mt-16 text-left text-white ml-96 ">
+          <h1 className="text-5xl font-extrabold drop-shadow-md">
+            Cozy Bean Cafe - Your <br />
+            Perfect Brew, Just a Click Away!
+          </h1>
+          <p className="mt-4 text-lg font-medium leading-relaxed drop-shadow-md">
+            Indulge in the rich aroma and flavors of handcrafted coffee with our seamless online <br />
+            ordering experience. Whether you're craving a bold espresso, a creamy latte, or a<br />
+            refreshing iced coffee, our beautifully designed order page makes it easy to customize<br />
+            and order your favorite brew in seconds.
+          </p>
+          <h2 className="mt-6 text-2xl font-bold drop-shadow-md">Order In Here.</h2>
+          <p className="text-sm font-semibold text-gray-300 drop-shadow-md">
+            (You can order only one at a time...)
+          </p>
         </div>
       </div>
-      
-      <div className="flex justify-center py-10">
-        <div className="grid max-w-6xl grid-cols-1 gap-20 px-6 sm:grid-cols-2 md:grid-cols-2">
-          {orderItems.map((item, index) => (
-            <div key={index} className="flex items-center space-x-4">
-              <img src={item.img} alt={item.name} className="w-[150px] h-[150px] rounded-xl shadow-md" />
-              <div className="mt-2">
-                <p className="text-lg font-bold text-gray-900">{item.name}</p>
-                <p className="text-sm text-gray-600">{item.desc1}</p>
-                <p className="font-semibold text-gray-800 text-md">{item.weight}</p>
-                <p className="font-bold text-red-600">{item.price}</p>
-                <button
-                  onClick={() => handleOrderClick(item)}
-                  className="px-3 py-1 mt-2 font-bold text-black bg-green-500 rounded-lg shadow-md hover:bg-yellow-300">Order</button>
+    
+      <div className="w-screen min-h-screen bg-gradient-to-b from-[#FFFFFF] to-[#A0FF9D] py-10">
+        <div className="flex justify-center">
+          <div className="grid max-w-6xl grid-cols-1 gap-10 px-6 sm:grid-cols-2 md:grid-cols-2">
+            {orderItems.map((item, index) => (
+              <div key={index} className="flex flex-col items-center space-x-0 text-center sm:flex-row sm:space-x-4 sm:text-left">
+                <img src={item.img} alt={item.name} className="w-[120px] h-[120px] md:w-[150px] md:h-[150px] rounded-xl shadow-md" />
+                <div className="mt-2">
+                  <p className="text-lg font-bold text-gray-900">{item.name}</p>
+                  <p className="text-sm text-gray-600">{item.desc1}</p>
+                  <p className="font-semibold text-gray-800 text-md">{item.weight}</p>
+                  <p className="font-bold text-red-600">{item.price}</p>
+                  <button
+                    onClick={() => handleOrderClick(item)}
+                    className="px-3 py-1 mt-2 font-bold text-black bg-green-500 rounded-lg shadow-md hover:bg-yellow-300">
+                    Order
+                  </button>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </>
